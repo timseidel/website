@@ -1,0 +1,14 @@
+/_site/
+/.quarto/
+.Rproj.user
+.Rhistory
+.DS_Store
+__pycache__/
+
+**/*.quarto_ipynb
+
+**/*.knit.md
+**/*.utf8.md
+
+research/
+research

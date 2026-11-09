@@ -1,0 +1,12 @@
+---
+title: "Blog"
+subtitle: "Notes on methods, tooling, and other things too small for a paper."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [image, date, title, description, categories, reading-time]
+  feed: true
+toc: false
+---

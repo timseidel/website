@@ -1,0 +1,17 @@
+{
+  "hash": "5fc420dd08c55b1cd0a75dc821c48f3b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Hello world (and how this blog works)\"\ndescription: \"What goes here, and how to add a new post.\"\ndate: 2026-09-03\ncategories: [meta]\n---\n\nThis is where short methodological notes live — the kind of thing that is\nuseful to write down but not worth a paper.\n\n## Adding a post\n\nCreate a folder under `blog/posts/` with an `index.qmd` inside, e.g.\n`blog/posts/2026-10-01-shrinkage-priors/index.qmd`. Give it a YAML header\nwith at least `title`, `description`, and `date`; the listing page picks it\nup automatically. Keep images and data next to the `index.qmd` in the same\nfolder.\n\nPlain Markdown works, so `index.md` is fine too if there is no code to run.\n\n## Code\n\nPosts can execute R or Python. A chunk looks like this:\n\n````markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- seq(0, 4 * pi, length.out = 200)\nplot(x, sin(x), type = \"l\", lwd = 2, col = \"steelblue\", bty = \"n\")\n```\n\n::: {.cell-output-display}\n![A figure rendered at build time.](index_files/figure-html/fig-example-1.png){#fig-example width=672}\n:::\n:::\n\n````\n\nCross-references (`@fig-example`), inline results, and citations from a\n`.bib` file via `bibliography:` in the header all work as usual.\n\nOne thing to know: `freeze: auto` is set in `_quarto.yml`, so computed\noutput is cached in `_freeze/` and committed to the repo. Render **locally**\nafter changing code (`quarto render`), commit the `_freeze/` changes, then\npush — GitHub then rebuilds the site without needing R or Python installed,\nand without your package versions. Markdown-only posts need no local render\nat all.\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

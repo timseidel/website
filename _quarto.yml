@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - fonts/
+
+website:
+  title: "Tim Seidel"
+  description: "Doctoral researcher in communication science at FAU Erlangen-Nürnberg."
+  site-url: "https://timseidel.github.io/website"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: blog/index.qmd
+        text: Blog
+  page-footer:
+    center: "© 2026 Tim Seidel · built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme.scss, theme-dark.scss]
+    css: fonts/plex.css
+    toc: true
+    anchor-sections: true
+    grid:
+      body-width: 900px
+
+execute:
+  freeze: auto

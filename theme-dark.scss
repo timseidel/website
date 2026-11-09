@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+
+// Dark palette only — all typography and layout come from theme.scss.
+$body-bg:      #151614 !default;
+$body-color:   #dee3d8 !default;
+$link-color:      #a8c981 !default;
+$link-hover-color: #c5e3a3 !default;
+$border-color: #2f322c !default;
+
+$navbar-bg:  $body-bg !default;
+$navbar-fg:  $body-color !default;
+$footer-bg:  $body-bg !default;
+$code-bg:    #1c1d1b !default;
+$code-color: #e0a080 !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --ink:           #dee3d8;
+  --muted:         #9da396;
+  --accent:        #a8c981;  // 9.8:1 on background
+  --accent-hover:  #c5e3a3;
+  --line:          #2f322c;
+  --card:          #1f201d;
+  --sunken:        #23241f;
+
+  --bs-border-color: var(--line);
+  --bs-border-color-translucent: var(--line);
+}
+
+.hero img {
+  box-shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 12px 28px -12px rgb(0 0 0 / 60%);
+}
